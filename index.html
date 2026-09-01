@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pesantren dan Sekolah Islam Terpadu Babussalam Depok — Membentuk generasi Qurani yang berilmu, berakhlak mulia, dan berprestasi." />
+  <meta name="keywords" content="pesantren depok, sekolah islam terpadu, TKIT, SDTQ, SMPTQ, Mahad, PKBM, babussalam, tahfidz quran" />
+  <meta property="og:title" content="Babussalam — Pesantren & SIT Depok" />
+  <meta property="og:description" content="Membentuk generasi Qurani berilmu, berakhlak mulia, dan berprestasi di Babussalam Depok." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b2d54" />
+  <title>Landing Page Babussalam | Pesantren & SIT Depok</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      safelist: ['md:grid-cols-3', 'md:grid-cols-2', 'lg:grid-cols-3', 'lg:grid-cols-4', 'sm:grid-cols-2', 'text-sky-50', 'text-sky-100', 'border-sky-400', 'text-sky-200', 'mt-12', 'pt-6'],
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif'],
+            arabic: ['"Amiri"', 'serif'],
+          },
+          colors: {
+            sky: {
+              50: '#e8f7ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#2ea3f2',
+              600: '#0f5fa8',
+              700: '#0b2d54',
+              800: '#0c1a2e',
+              900: '#060d17',
+            },
+            amber: {
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f5a623',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          },
+          boxShadow: {
+            soft: '0 10px 40px -10px rgba(14,63,168,0.2)',
+            glow: '0 0 30px rgba(46,163,242,0.3)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+<body class="font-body text-sky-800 bg-white antialiased">
+
+  <!-- ============================================================
+       NAVBAR / HEADER
+       ============================================================ -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ============================================================
+       SECTION 1 — HERO
+       ============================================================ -->
+  <section id="beranda" class="hero-pattern pattern-bg min-h-screen flex items-center pt-20 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Left: Copy -->
+        <div class="reveal">
+          <!-- Bismillah -->
+          <div class="font-arabic text-3xl text-white mb-6 leading-relaxed text-center lg:text-left">
+            بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+          </div>
+
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg border border-teal-300/50 bg-white/10 mb-6">
+            <span class="w-2 h-2 rounded-full bg-white"></span>
+            <span class="text-sky-100 text-sm font-semibold tracking-wide">Pesantren & SIT Depok</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-5xl xl:text-6xl text-white leading-tight mb-6">
+            Membentuk Generasi<br />
+            Berilmu &
+            <span class="text-white">Berakhlak Mulia</span>
+          </h1>
+
+          <!-- Description -->
+          <p class="text-white text-lg leading-relaxed mb-8 max-w-lg">
+            Babussalam hadir sebagai lembaga pendidikan Islam terpadu yang memadukan kurikulum tahfidz Al-Qur'an dengan ilmu pengetahuan modern di Kota Depok, sejak 2005.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap gap-4">
+            <a target="_blank" rel="noopener" href="https://admission.sisalam.id/" class="inline-flex items-center gap-2 px-7 py-3.5 bg-white hover:bg-teal-500 text-sky-900 font-bold rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all text-base">
+              Daftar PSB Sekarang
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <a href="#profil" class="inline-flex items-center gap-2 px-7 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/25 backdrop-blur-sm transition-all text-base hover:-translate-y-0.5">
+              Kenali Kami
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Stats Card -->
+        <div class="reveal float-anim flex justify-center lg:justify-end">
+          <div class="bg-white/95 backdrop-blur-xl rounded-3xl shadow-glow p-8 w-full max-w-sm border border-white/30">
+            <div class="text-center mb-6">
+              <div class="w-14 h-14 rounded-2xl bg-sky-600 flex items-center justify-center mx-auto mb-3 shadow-lg">
+                <span class="font-arabic text-white text-2xl font-bold">ب</span>
+              </div>
+              <h3 class="font-display font-bold text-sky-800 text-xl">Babussalam</h3>
+              <p class="text-sky-500 text-sm">Sejak 2005 · Depok, Jawa Barat</p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <!-- Stat 1 -->
+              <div class="bg-sky-50 rounded-2xl p-4 text-center border border-sky-100">
+                <div class="text-3xl font-display font-extrabold text-sky-600">5+</div>
+                <div class="text-xs font-semibold text-sky-700 mt-1">Jenjang<br/>Pendidikan</div>
+              </div>
+              <!-- Stat 2 -->
+              <div class="bg-amber-50 rounded-2xl p-4 text-center border border-amber-100">
+                <div class="text-3xl font-display font-extrabold text-sky-500">30</div>
+                <div class="text-xs font-semibold text-sky-600 mt-1">Juz Target<br/>Hafalan</div>
+              </div>
+              <!-- Stat 3 -->
+              <div class="bg-sky-50 rounded-2xl p-4 text-center border border-sky-100">
+                <div class="text-xl font-display font-extrabold text-sky-600 leading-tight">Manhaj<br/>As-Sunnah</div>
+                <div class="text-xs font-semibold text-sky-700 mt-1">Kurikulum<br/>Islami</div>
+              </div>
+              <!-- Stat 4 -->
+              <div class="bg-sky-400 rounded-2xl p-4 text-center">
+                <div class="text-xl font-display font-extrabold text-white leading-tight">PTN &<br/>Madinah</div>
+                <div class="text-xs font-semibold text-white mt-1">Target<br/>Alumni</div>
+              </div>
+            </div>
+            <div class="mt-5 flex items-center gap-2 justify-center">
+              <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+              <span class="text-xs text-sky-500 font-medium">PSB Tahun Ajaran Baru Dibuka</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-white/40">
+      <span class="text-xs tracking-widest uppercase">Scroll</span>
+      <svg class="w-5 h-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  
+    <!-- ===== PROFIL PESANTREN ===== -->
+  <div id="profil-placeholder"></div>
+
+  <!-- ===== SWIPER SECTIONS ===== -->
+  <div id="swiper-alumni-placeholder"></div>
+  <div id="swiper-prestasi-placeholder"></div>
+
+  <!-- ============================================================
+       SECTION 3 — PROGRAM
+       ============================================================ -->
+  <section id="program" class="bg-sky-50 py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 bg-sky-100 text-sky-600 text-sm font-semibold rounded-lg mb-4 tracking-wide">Unit Pendidikan</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-sky-800 mb-4">Program Unggulan Babussalam</h2>
+        <p class="text-sky-500 max-w-2xl mx-auto">Lima unit pendidikan Islam terpadu dari jenjang TK hingga pesantren dewasa.</p>
+      </div>
+
+      <!-- Program Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- TKIT -->
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-soft border border-sky-100 border-t-4 border-t-sky-500 reveal">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center mb-4">
+              <span class="font-display font-extrabold text-sky-600 text-xl">01</span>
+            </div>
+            <div class="inline-block px-3 py-1 bg-sky-50 text-sky-600 text-xs font-semibold rounded-lg mb-3">TK Islam Terpadu</div>
+            <h3 class="font-display font-bold text-xl text-sky-800 mb-2">TKIT Babussalam</h3>
+            <p class="text-sky-500 text-sm leading-relaxed mb-5">Pondasi pendidikan Islam sejak dini dengan metode bermain sambil belajar Al-Qur'an, akhlak, dan sains dasar yang menyenangkan.</p>
+            <ul class="space-y-1.5 mb-6">
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Hafalan doa & surat pendek</li>
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Pengenalan huruf hijaiyah</li>
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Metode fun learning Islami</li>
+            </ul>
+            <a href="program-tkit.html" class="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-semibold text-sm group">
+              Selengkapnya
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- SDTQ -->
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-soft border border-sky-100 border-t-4 border-t-sky-500 reveal">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center mb-4">
+              <span class="font-display font-extrabold text-sky-600 text-xl">02</span>
+            </div>
+            <div class="inline-block px-3 py-1 bg-sky-50 text-sky-600 text-xs font-semibold rounded-lg mb-3">SD Tahfidz Quran</div>
+            <h3 class="font-display font-bold text-xl text-sky-800 mb-2">SDTQ Babussalam</h3>
+            <p class="text-sky-500 text-sm leading-relaxed mb-5">Program SD tahfidz intensif yang memadukan kurikulum nasional dengan target hafalan Al-Qur'an 6 juz selama 6 tahun pendidikan.</p>
+            <ul class="space-y-1.5 mb-6">
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Target 6 juz selama SD</li>
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Akreditasi A Kemendikbud</li>
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Full-day learning system</li>
+            </ul>
+            <a href="program-sdtq.html" class="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-semibold text-sm group">
+              Selengkapnya
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- SMPTQ -->
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-soft border border-sky-100 border-t-4 border-t-sky-500 reveal">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center mb-4">
+              <span class="font-display font-extrabold text-sky-600 text-xl">03</span>
+            </div>
+            <div class="inline-block px-3 py-1 bg-sky-50 text-sky-600 text-xs font-semibold rounded-lg mb-3">SMP Tahfidz Quran</div>
+            <h3 class="font-display font-bold text-xl text-sky-800 mb-2">SMPTQ Babussalam</h3>
+            <p class="text-sky-500 text-sm leading-relaxed mb-5">Jenjang SMP dengan sistem boarding school partial, memperkuat hafalan, memperluas wawasan sains, dan membentuk leadership Islami.</p>
+            <ul class="space-y-1.5 mb-6">
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Tambahan 6 juz (total 12+)</li>
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Program leadership santri</li>
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Bimbingan olimpiade sains</li>
+            </ul>
+            <a href="program-smptq.html" class="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-semibold text-sm group">
+              Selengkapnya
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Ma'had -->
+        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-soft border border-sky-100 border-t-4 border-t-sky-500 reveal">
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center mb-4">
+              <span class="font-display font-extrabold text-sky-600 text-xl">04</span>
+            </div>
+            <div class="inline-block px-3 py-1 bg-sky-50 text-sky-600 text-xs font-semibold rounded-lg mb-3">Pondok Pesantren</div>
+            <h3 class="font-display font-bold text-xl text-sky-800 mb-2">Ma'had Babussalam</h3>
+            <p class="text-sky-500 text-sm leading-relaxed mb-5">Pesantren salafi untuk pemuda dewasa dengan fokus intensif pada kajian kitab kuning, ilmu syar'i, dan penyelesaian 30 juz hafalan.</p>
+            <ul class="space-y-1.5 mb-6">
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Target 30 juz hafalan</li>
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Kajian kitab ulama salaf</li>
+              <li class="flex items-center gap-2 text-sm text-sky-600"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Beasiswa ke Universitas Madinah</li>
+            </ul>
+            <a href="program-mahad.html" class="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-semibold text-sm group">
+              Selengkapnya
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- PKBM — spans 2 cols -->
+        <div class="card-hover bg-sky-400 rounded-2xl overflow-hidden shadow-soft sm:col-span-2 lg:col-span-2 reveal">
+          <div class="p-8 h-full flex flex-col sm:flex-row gap-8 items-start sm:items-center">
+            <div class="flex-1">
+              <div class="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-4">
+                <span class="font-display font-extrabold text-white text-xl">05</span>
+              </div>
+              <div class="inline-block px-3 py-1 bg-white text-sky-900 text-xs font-bold rounded-lg mb-3">Program Khusus</div>
+              <h3 class="font-display font-bold text-2xl text-white mb-3">PKBM Babussalam</h3>
+              <p class="text-white text-sm leading-relaxed mb-5">Pusat Kegiatan Belajar Masyarakat untuk masyarakat umum yang ingin mendapatkan pendidikan formal setara Paket A, B, dan C berbasis keislaman.</p>
+              <ul class="grid sm:grid-cols-2 gap-2 mb-6">
+                <li class="flex items-center gap-2 text-sm text-sky-100"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>Paket A, B, C bersertifikat</li>
+                <li class="flex items-center gap-2 text-sm text-sky-100"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>Fleksibel & terjangkau</li>
+                <li class="flex items-center gap-2 text-sm text-sky-100"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>Kurikulum keislaman</li>
+                <li class="flex items-center gap-2 text-sm text-sky-100"><span class="w-1.5 h-1.5 rounded-full bg-white"></span>Ijazah setara nasional</li>
+              </ul>
+              <a href="program-pkbm.html" class="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-teal-500 text-sky-900 font-bold rounded-xl transition-colors text-sm">
+                Info PKBM
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
+            </div>
+            <div class="hidden sm:block text-8xl opacity-20 select-none">📖</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 — FASILITAS
+       ============================================================ -->
+  <section id="fasilitas" class="py-20 lg:py-28 pattern-bg" style="background: linear-gradient(135deg, #0b2d54 0%, #0f5fa8 100%);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16 reveal">
+        <span class="inline-block px-4 py-1.5 bg-white/10 text-white text-sm font-semibold rounded-lg mb-4 tracking-wide border border-white/15">Sarana &amp; Prasarana</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mb-4">Fasilitas Pendukung Belajar</h2>
+        <p class="text-sky-300 max-w-2xl mx-auto">Kami menyediakan lingkungan belajar yang kondusif, nyaman, dan Islami untuk mendukung perkembangan santri secara optimal.</p>
+      </div>
+
+      <!-- Fasilitas Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <div class="card-hover p-6 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm reveal">
+          <div class="text-4xl mb-4">🏠</div>
+          <h3 class="font-display font-bold text-white text-lg mb-2">Kelas &amp; Asrama Ber-AC</h3>
+          <p class="text-white/80 text-sm leading-relaxed">Lingkungan belajar dan istirahat yang nyaman bagi seluruh santri, terpisah antara putra dan putri.</p>
+        </div>
+
+        <div class="card-hover p-6 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm reveal">
+          <div class="text-4xl mb-4">🧺</div>
+          <h3 class="font-display font-bold text-white text-lg mb-2">Layanan Laundry</h3>
+          <p class="text-white/80 text-sm leading-relaxed">Fasilitas laundry 4 potong/hari sudah termasuk dalam SPP bulanan santri.</p>
+        </div>
+
+        <div class="card-hover p-6 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm reveal">
+          <div class="text-4xl mb-4">📖</div>
+          <h3 class="font-display font-bold text-white text-lg mb-2">Target Hafalan 10–30 Juz</h3>
+          <p class="text-white/80 text-sm leading-relaxed">Bimbingan tahfidz terstruktur sesuai kemampuan dan jenjang santri dengan metode muraja'ah harian.</p>
+        </div>
+
+        <div class="card-hover p-6 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm reveal">
+          <div class="text-4xl mb-4">🌍</div>
+          <h3 class="font-display font-bold text-white text-lg mb-2">Bahasa Arab Setara LIPIA</h3>
+          <p class="text-white/80 text-sm leading-relaxed">Kurikulum bahasa Arab dengan standar kualitas setara LIPIA untuk penguasaan ilmu syar'i secara mendalam.</p>
+        </div>
+
+        <div class="card-hover p-6 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm reveal">
+          <div class="text-4xl mb-4">💳</div>
+          <h3 class="font-display font-bold text-white text-lg mb-2">Biaya Terjangkau</h3>
+          <p class="text-white/80 text-sm leading-relaxed">Tersedia keringanan khusus, termasuk diskon bagi transfer internal antar unit pendidikan Babussalam.</p>
+        </div>
+
+        <div class="card-hover p-6 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-sm reveal">
+          <div class="text-4xl mb-4">🏅</div>
+          <h3 class="font-display font-bold text-white text-lg mb-2">Ekstrakurikuler Lengkap</h3>
+          <p class="text-white/80 text-sm leading-relaxed">Menjahit, tata boga, teknologi &amp; multimedia, taekwondo, badminton, panahan, futsal, dan basket.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 — BERITA
+       ============================================================ -->
+  <section id="berita" class="bg-white py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-12 reveal">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-sky-50 text-sky-700 text-xs font-semibold rounded-lg border border-sky-100 mb-3">
+            <span class="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
+            WordPress Live Feed
+          </div>
+        </div>
+      </div>
+
+      <!-- KEGIATAN SISWA SECTION -->
+      <div class="mb-20 reveal">
+        <div class="flex items-center justify-between border-b border-sky-100 pb-4 mb-8">
+          <h2 class="font-display text-lg font-extrabold text-sky-800 uppercase tracking-widest">Kegiatan Siswa</h2>
+          <a href="berita.html?cat=497" class="text-sky-500 hover:text-sky-700 font-semibold text-sm transition-colors">Semua Kegiatan &raquo;</a>
+        </div>
+        <div id="kegiatan-siswa-container">
+          <!-- Skeletons render otomatis disini -->
+        </div>
+      </div>
+
+      <!-- BABUSSALAM FEED SECTION -->
+      <div class="reveal">
+        <div class="flex items-center justify-between border-b border-sky-100 pb-4 mb-8">
+          <h2 class="font-display text-lg font-extrabold text-sky-800 uppercase tracking-widest">Babussalam Feed</h2>
+          <a href="berita.html" class="text-sky-500 hover:text-sky-700 font-semibold text-sm transition-colors">Semua Berita &raquo;</a>
+        </div>
+        
+<div id="home-news-container">
+          <!-- Skeletons render otomatis disini -->
+        </div>
+      </div>
+    </div>
+</section>
+
+  <!-- ============================================================
+       SECTION 7 — PSB & KONTAK
+       ============================================================ -->
+  <!-- PSB Banner — Premium Redesign -->
+  <section id="kontak-psb" class="relative overflow-hidden bg-gradient-to-br from-sky-600 via-sky-700 to-sky-900 py-20 lg:py-28">
+    <!-- Decorative blobs -->
+    <div class="absolute -top-24 -left-24 w-80 h-80 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-sky-400/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/3 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/15 border border-white/25 text-white text-xs font-bold rounded-full mb-6 backdrop-blur-sm reveal">
+        <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+        Penerimaan Santri Baru (PSB) Sedang Dibuka
+      </div>
+
+      <!-- Heading -->
+      <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white mb-5 leading-tight reveal">
+        Titipkan Putra-Putri Anda<br/>
+        <span class="text-yellow-300">di Pesantren Terbaik Depok</span>
+      </h2>
+
+      <!-- Subtext -->
+      <p class="text-sky-100 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed reveal">
+        Bergabunglah bersama ribuan santri Babussalam yang telah meraih prestasi gemilang — hafal Al-Qur'an, berilmu syar'i, dan berprestasi di tingkat nasional.
+      </p>
+
+      <!-- Single CTA Button -->
+      <div class="reveal">
+        <a href="https://admission.sisalam.id/" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-3 px-10 py-4 bg-yellow-400 hover:bg-yellow-300 text-sky-900 font-extrabold rounded-2xl shadow-2xl shadow-sky-900/40 hover:-translate-y-1 active:translate-y-0 transition-all text-lg">
+          Daftar PSB Sekarang
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+        <p class="text-sky-200/70 text-xs mt-4">Pendaftaran online melalui portal resmi admission.sisalam.id</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail PSB -->
+            <!-- PSB Pricing & Info Section -->
+      <section class="py-20 lg:py-28 bg-sky-50/50">
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+          <span class="text-sky-600 font-bold tracking-widest uppercase text-xs">PSB</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-sky-900 mt-3 mb-4">Penerimaan Santri Baru</h2>
+          <p class="text-sky-800/80 text-base sm:text-lg">Bergabunglah bersama keluarga besar Pesantren & SIT Babussalam. Berikut informasi biaya dan alur pendaftaran.</p>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="grid md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto mb-16">
+          
+          <!-- Card 1 -->
+          <div class="reveal bg-white rounded-3xl p-8 border border-sky-100 shadow-sm relative h-full">
+            <h3 class="font-display font-bold text-2xl text-sky-900 mb-1">Mutawasithah</h3>
+            <p class="text-xs font-bold text-sky-500 uppercase tracking-widest mb-8">Setara SMP</p>
+            <div class="mb-8">
+              <span class="font-display font-extrabold text-4xl text-sky-900">Rp 23.000.000</span>
+              <span class="block text-xs text-sky-600 mt-2">Total biaya program</span>
+            </div>
+            <ul class="space-y-4 text-sm text-sky-800 font-medium">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sky-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                SPP, seragam & buku
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sky-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Ekstrakurikuler
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sky-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Layanan kesehatan
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sky-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Laundry 4 potong/hari
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2 (Highlighted) -->
+          <div class="reveal bg-sky-900 rounded-3xl p-8 border border-sky-800 shadow-xl relative transform md:-translate-y-4 h-[105%] flex flex-col justify-center">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-300 text-sky-900 text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap shadow-md">
+              Diskon Transfer Internal 50%
+            </div>
+            <h3 class="font-display font-bold text-2xl text-white mb-1">Tsanawiyyah</h3>
+            <p class="text-xs font-bold text-sky-300 uppercase tracking-widest mb-8">Setara SMA</p>
+            <div class="mb-8">
+              <span class="font-display font-extrabold text-4xl text-white">Rp 24.000.000</span>
+              <span class="block text-xs text-sky-200 mt-2">Total biaya program</span>
+            </div>
+            <ul class="space-y-4 text-sm text-white font-medium">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-yellow-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                SPP, seragam & buku
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-yellow-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Ekstrakurikuler
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-yellow-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Layanan kesehatan
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-yellow-300 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Laundry 4 potong/hari
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="reveal bg-white rounded-3xl p-8 border border-sky-100 shadow-sm relative h-full">
+            <h3 class="font-display font-bold text-2xl text-sky-900 mb-1">Tahfidz Al-Qur'an</h3>
+            <p class="text-xs font-bold text-sky-500 uppercase tracking-widest mb-8">Setara SMP - UMUM</p>
+            <div class="mb-8">
+              <span class="font-display font-extrabold text-4xl text-sky-900">Rp 20.200.000</span>
+              <span class="block text-xs text-sky-600 mt-2">Total biaya program</span>
+            </div>
+            <ul class="space-y-4 text-sm text-sky-800 font-medium">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sky-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                SPP, seragam & buku
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sky-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Ekstrakurikuler
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sky-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Layanan kesehatan
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sky-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Laundry 4 potong/hari
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Requirements & Steps -->
+        <div class="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+          <!-- Left: Syarat -->
+          <div class="reveal bg-white rounded-3xl p-8 sm:p-10 border border-sky-100 shadow-sm">
+            <h3 class="font-display font-bold text-2xl text-sky-900 mb-8">Syarat &amp; Dokumen</h3>
+            <ul class="space-y-5">
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-yellow-400 shrink-0 mt-2"></span>
+                <span class="text-sm text-sky-800 leading-relaxed font-medium">Lulus kelas 6 SD (untuk Mutawasithah/Tahfidz) atau kelas 3 SMP (untuk Tsanawiyyah)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-yellow-400 shrink-0 mt-2"></span>
+                <span class="text-sm text-sky-800 leading-relaxed font-medium">Membayar biaya pendaftaran Rp 500.000</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-yellow-400 shrink-0 mt-2"></span>
+                <span class="text-sm text-sky-800 leading-relaxed font-medium">Ijazah/SKL, rapor, dan akta lahir yang telah dilegalisir</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="w-2 h-2 rounded-full bg-yellow-400 shrink-0 mt-2"></span>
+                <span class="text-sm text-sky-800 leading-relaxed font-medium">Surat keterangan sehat dari dokter</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Alur -->
+          <div class="reveal bg-white rounded-3xl p-8 sm:p-10 border border-sky-100 shadow-sm">
+            <h3 class="font-display font-bold text-2xl text-sky-900 mb-8">Alur Pendaftaran</h3>
+            <ul class="space-y-6">
+              <li class="flex items-start gap-4">
+                <span class="w-7 h-7 shrink-0 rounded-full bg-sky-900 text-white text-sm font-bold flex items-center justify-center mt-0.5">1</span>
+                <span class="text-sm text-sky-800 leading-relaxed font-medium">Bayar biaya formulir pendaftaran dan konfirmasi pembayaran</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="w-7 h-7 shrink-0 rounded-full bg-sky-900 text-white text-sm font-bold flex items-center justify-center mt-0.5">2</span>
+                <span class="text-sm text-sky-800 leading-relaxed font-medium">Cetak dan lengkapi formulir pendaftaran</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="w-7 h-7 shrink-0 rounded-full bg-sky-900 text-white text-sm font-bold flex items-center justify-center mt-0.5">3</span>
+                <span class="text-sm text-sky-800 leading-relaxed font-medium">Bawa formulir beserta dokumen persyaratan pada hari tes</span>
+              </li>
+              <li class="flex items-start gap-4">
+                <span class="w-7 h-7 shrink-0 rounded-full bg-sky-900 text-white text-sm font-bold flex items-center justify-center mt-0.5">4</span>
+                <span class="text-sm text-sky-800 leading-relaxed font-medium">Hasil seleksi diumumkan maksimal 2 hari setelah tes</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+  <!-- Kontak -->
+  <section id="kontak" class="bg-stone-50 py-20 lg:py-28 border-t border-sky-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14 reveal">
+        <span class="inline-block px-4 py-1.5 bg-sky-100 text-sky-600 text-xs font-bold rounded-full mb-4 tracking-widest uppercase">Hubungi Kami</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-sky-800">Pusat Layanan &amp; Informasi</h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-10 reveal">
+
+        <!-- Google Maps Embed with Overlay Link -->
+        <div class="relative rounded-3xl overflow-hidden shadow-xl border border-sky-100 h-96 lg:h-full min-h-[400px] group">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.534834812847!2d106.86601527576568!3d-6.4177836936048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed15dd4d591f%3A0x37f5c621e1e76d8e!2sPondok%20Pesantren%20Babussalam%20Depok!5e0!3m2!1sid!2sid!4v1725000000000!5m2!1sid!2sid"
+            width="100%"
+            height="100%"
+            style="border:0; min-height: 400px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Lokasi Pondok Pesantren Babussalam Depok">
+          </iframe>
+          <!-- Clickable Overlay -->
+          <a href="https://maps.app.goo.gl/cPv5UgWxj5v8nxMdA" target="_blank" rel="noopener noreferrer" 
+             class="absolute inset-0 z-10 bg-sky-900/0 hover:bg-sky-900/10 transition-colors flex items-center justify-center">
+             <div class="opacity-0 group-hover:opacity-100 bg-white text-sky-800 font-bold py-3 px-6 rounded-full shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-all flex items-center gap-2">
+               <svg class="w-5 h-5 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+               Buka di Google Maps
+             </div>
+          </a>
+        </div>
+
+        <!-- Info Panel: Jam Operasional + Pusat Informasi -->
+        <div class="space-y-8">
+
+          <!-- Jam Operasional -->
+          <div>
+            <h3 class="text-xs font-extrabold text-sky-800 uppercase tracking-widest mb-4 flex items-center gap-2">
+              <svg class="w-4 h-4 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Jam Operasional Kantor
+            </h3>
+            <div class="divide-y divide-stone-100 border border-stone-200 rounded-2xl overflow-hidden bg-white text-sm">
+              <div class="flex justify-between items-center px-5 py-3">
+                <span class="text-stone-600">Senin – Jum'at</span>
+                <span class="font-semibold text-sky-800">07.30 – 15.00 WIB</span>
+              </div>
+              <div class="flex justify-between items-center px-5 py-3">
+                <span class="text-stone-600">Sabtu</span>
+                <span class="font-semibold text-sky-800">08.00 – 11.00 WIB</span>
+              </div>
+              <div class="flex justify-between items-center px-5 py-3">
+                <span class="text-stone-600">Ahad</span>
+                <span class="font-semibold text-red-500">Tutup</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pusat Informasi & Pendaftaran -->
+          <div>
+            <h3 class="text-xs font-extrabold text-sky-800 uppercase tracking-widest mb-3 flex items-center gap-2">
+              <svg class="w-4 h-4 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              Pusat Informasi & Pendaftaran
+            </h3>
+            <p class="text-stone-500 text-xs mb-4 leading-relaxed">Hubungi kami sesuai unit pendidikan yang ingin ditanyakan:</p>
+            <div class="divide-y divide-stone-100 border border-stone-200 rounded-2xl overflow-hidden bg-white text-sm">
+              <div class="flex justify-between items-center px-5 py-3">
+                <span class="text-stone-600 flex items-center gap-2">
+                  <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                  TK Al-Quran
+                </span>
+                <a href="https://wa.me/6281717424525" class="font-semibold text-sky-600 hover:text-sky-800 transition-colors">0817-1742-4525</a>
+              </div>
+              <div class="flex justify-between items-center px-5 py-3">
+                <span class="text-stone-600 flex items-center gap-2">
+                  <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                  SDTQ
+                </span>
+                <a href="https://wa.me/6281283066012" class="font-semibold text-sky-600 hover:text-sky-800 transition-colors">0812-8306-6012</a>
+              </div>
+              <div class="flex justify-between items-center px-5 py-3">
+                <span class="text-stone-600 flex items-center gap-2">
+                  <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                  Mutawassithah & Tsanawiyah
+                </span>
+                <a href="https://wa.me/6287825000482" class="font-semibold text-sky-600 hover:text-sky-800 transition-colors">0878-2500-0482</a>
+              </div>
+              <div class="flex justify-between items-center px-5 py-3">
+                <span class="text-stone-600 flex items-center gap-2">
+                  <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                  SMPTQ Akhwat
+                </span>
+                <a href="https://wa.me/6285882157484" class="font-semibold text-sky-600 hover:text-sky-800 transition-colors">0858-8215-7484</a>
+              </div>
+              <div class="flex justify-between items-center px-5 py-3">
+                <span class="text-stone-600 flex items-center gap-2">
+                  <svg class="w-3.5 h-3.5 text-sky-400 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+                  Mahad Tahfidz
+                </span>
+                <a href="https://wa.me/6285179790981" class="font-semibold text-sky-600 hover:text-sky-800 transition-colors">0851-7979-0981</a>
+              </div>
+            </div>
+
+            <!-- Email support -->
+            <div class="mt-4 flex items-center gap-2 text-xs text-stone-500">
+              <svg class="w-3.5 h-3.5 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email:
+              <a href="mailto:info@babussalam.sch.id" class="text-sky-600 hover:text-sky-800 font-medium transition-colors">info@babussalam.sch.id</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <div id="global-footer"></div>
+
+  <!-- ============================================================
+       FLOATING BUTTONS
+       ============================================================ -->
+  <!-- WhatsApp -->
+  <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%2C+saya+ingin+informasi+tentang+Babussalam" target="_blank" rel="noopener"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-sky-500 hover:bg-sky-400 text-white rounded-2xl shadow-glow flex items-center justify-center hover:scale-110 active:scale-95 transition-all"
+     aria-label="Chat WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Back to Top -->
+  <button id="back-to-top"
+     class="fixed bottom-6 left-6 z-50 w-12 h-12 bg-sky-500 hover:bg-sky-400 text-white rounded-2xl shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-all opacity-0 invisible -translate-y-2"
+     onclick="window.scrollTo({top:0,behavior:'smooth'})"
+     aria-label="Kembali ke atas">
+    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/wp-api.js"></script>
+  <script src="assets/js/layout.js?v=1788235033"></script>
+  <script src="assets/js/site.js?v=3"></script>
+  <script src="assets/js/home-news.js"></script>
+
+
+    </body>
+</html>

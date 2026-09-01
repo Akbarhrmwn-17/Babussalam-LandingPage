@@ -1,0 +1,112 @@
+<header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <span class="w-12 h-12 rounded-2xl bg-white ring-2 ring-sky-200/50 flex items-center justify-center shadow-soft overflow-hidden shrink-0">
+            <img src="assets/Logo.png" alt="Logo Babussalam" class="w-10 h-10 object-contain" width="40" height="40">
+          </span>
+          <span class="flex flex-col justify-center">
+            <span id="brand-text" class="block font-display font-extrabold text-xl sm:text-2xl text-white transition-colors duration-300 leading-none mb-1">YAYASAN</span>
+            <span id="brand-sub" class="block text-[9px] sm:text-[10px] tracking-widest uppercase text-sky-100 font-bold transition-colors duration-300 leading-none">BABUSSALAM AS-SUNNAH</span>
+          </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-white transition-colors duration-300" id="desktop-nav">
+          <a href="index.html" class="nav-link py-2" data-nav-match="index.html">Beranda</a>
+          <a href="index.html#profil" class="nav-link py-2" data-nav-match="profil.html">Profil</a>
+
+          <!-- Program Dropdown -->
+          <div class="dropdown-wrap" id="program-dropdown">
+            <button type="button" class="dropdown-trigger nav-link py-2 flex items-center gap-1.5 focus:outline-none" data-nav-match="program-*">
+              Program Pendidikan
+              <svg class="dropdown-chevron w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="dropdown-panel w-80 pt-3">
+              <div class="bg-white rounded-2xl shadow-2xl ring-1 ring-sky-800/10 overflow-hidden text-sky-800 p-2 space-y-1">
+                <a href="program-tk.html" class="block px-4 py-3 rounded-xl hover:bg-sky-50 transition-colors">
+                  <span class="block font-bold text-sm text-sky-800">TK Islam Terpadu</span>
+                  <span class="block text-xs text-sky-600">Pendidikan Usia Dini Berkarakter</span>
+                </a>
+                <a href="program-sdtq.html" class="block px-4 py-3 rounded-xl hover:bg-sky-50 transition-colors border-t border-stone-100">
+                  <span class="block font-bold text-sm text-sky-800">SDTQ Babussalam</span>
+                  <span class="block text-xs text-sky-600">Sekolah Dasar Tahfidzul Qur'an</span>
+                </a>
+                <a href="program-smptq.html" class="block px-4 py-3 rounded-xl hover:bg-sky-50 transition-colors border-t border-stone-100">
+                  <span class="block font-bold text-sm text-sky-800">SMPTQ Putri Babussalam</span>
+                  <span class="block text-xs text-sky-600">SMP Tahfidz Terpadu (Khusus Putri)</span>
+                </a>
+                <a href="program-mahad-tahfidz.html" class="block px-4 py-3 rounded-xl hover:bg-sky-50 transition-colors border-t border-stone-100">
+                  <span class="block font-bold text-sm text-sky-800">Mutawassithah / Tsanawiyah</span>
+                  <span class="block text-xs text-sky-600">Target 30 Juz &amp; Bahasa Arab</span>
+                </a>
+                <a href="program-tahfidz.html" class="block px-4 py-3 rounded-xl hover:bg-sky-50 transition-colors border-t border-stone-100">
+                  <span class="block font-bold text-sm text-sky-800">Ma'had Tahfidz Al-Qur'an</span>
+                  <span class="block text-xs text-sky-600">Mencetak Penghafal Al-Qur'an 30 Juz</span>
+                </a>
+                <a href="program-pkbm.html" class="block px-4 py-3 rounded-xl hover:bg-sky-50 transition-colors border-t border-stone-100">
+                  <span class="block font-bold text-sm text-sky-800">PKBM Plus Babussalam</span>
+                  <span class="block text-xs text-sky-600">Pendidikan Kesetaraan Paket A, B, &amp; C</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="berita.html" class="nav-link py-2" data-nav-match="berita.html,baca.html*">Berita &amp; Feed</a>
+          <a href="galeri.html" class="nav-link py-2" data-nav-match="galeri.html">Galeri</a>
+          <a href="index.html#kontak-psb" class="nav-link py-2" data-nav-match="index.html#kontak-psb,kontak.html">Kontak &amp; PSB</a>
+        </nav>
+
+        <!-- CTA PSB Desktop -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="https://admission.sisalam.id/" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 bg-sky-900 hover:bg-sky-950 text-white font-bold px-5 py-2.5 rounded-lg shadow-soft transition-all hover:scale-105">
+            Daftar PSB
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-btn" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl text-white focus:outline-none transition-colors duration-300" aria-label="Buka menu navigasi" aria-expanded="false">
+          <svg id="icon-open" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-7 h-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="mobile-menu lg:hidden bg-white/95 backdrop-blur-md border-t border-sky-700/10 shadow-2xl">
+      <nav class="px-5 py-6 flex flex-col gap-2 text-sky-800 font-semibold text-base">
+        <a href="index.html" class="mobile-link px-4 py-3 rounded-xl hover:bg-sky-50" data-nav-match="index.html">Beranda</a>
+        <a href="index.html#profil" class="mobile-link px-4 py-3 rounded-xl hover:bg-sky-50" data-nav-match="index.html">Profil Pesantren</a>
+
+        <!-- Mobile Program Dropdown Accordion -->
+        <div>
+          <button type="button" id="mobile-program-btn" class="w-full flex items-center justify-between px-4 py-3 rounded-xl hover:bg-sky-50 text-left">
+            Program Pendidikan
+            <svg class="dropdown-chevron w-4 h-4 transition-transform text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="mobile-program-panel" class="submenu pl-4 pr-2 space-y-1 mt-1">
+            <a href="program-tk.html" class="mobile-link block px-4 py-2.5 rounded-lg hover:bg-sky-50 text-sm font-semibold text-sky-700">TK Islam Terpadu</a>
+            <a href="program-sdtq.html" class="mobile-link block px-4 py-2.5 rounded-lg hover:bg-sky-50 text-sm font-semibold text-sky-700">SDTQ Babussalam</a>
+            <a href="program-smptq.html" class="mobile-link block px-4 py-2.5 rounded-lg hover:bg-sky-50 text-sm font-semibold text-sky-700">SMPTQ Putri Babussalam</a>
+            <a href="program-mahad-tahfidz.html" class="mobile-link block px-4 py-2.5 rounded-lg hover:bg-sky-50 text-sm font-semibold text-sky-700">Mutawassithah / Tsanawiyah</a>
+            <a href="program-tahfidz.html" class="mobile-link block px-4 py-2.5 rounded-lg hover:bg-sky-50 text-sm font-semibold text-sky-700">Ma'had Tahfidz Al-Qur'an</a>
+            <a href="program-pkbm.html" class="mobile-link block px-4 py-2.5 rounded-lg hover:bg-sky-50 text-sm font-semibold text-sky-700">PKBM Plus Babussalam</a>
+          </div>
+        </div>
+
+        <a href="berita.html" class="mobile-link px-4 py-3 rounded-xl hover:bg-sky-50" data-nav-match="index.html">Berita &amp; Feed</a>
+        <a href="galeri.html" class="mobile-link px-4 py-3 rounded-xl hover:bg-sky-50" data-nav-match="index.html">Galeri Kegiatan</a>
+        <a href="index.html#kontak-psb" class="mobile-link px-4 py-3 rounded-xl hover:bg-sky-50" data-nav-match="index.html">Kontak &amp; PSB</a>
+
+        <a href="https://admission.sisalam.id/" target="_blank" rel="noopener"
+           class="mt-4 text-center bg-sky-900 text-white font-bold px-6 py-3.5 rounded-lg shadow-soft">
+          Daftar PSB Sekarang
+        </a>
+      </nav>
+    </div>
+  </header>
