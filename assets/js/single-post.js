@@ -90,6 +90,8 @@
       // Body
       document.getElementById('article-body').innerHTML = post.content?.rendered || '';
 
+
+
       // Share buttons
       const shareUrl = encodeURIComponent(window.location.href);
       const shareTitle = encodeURIComponent(stripHtml(post.title.rendered));
