@@ -17,6 +17,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadComponent('swiper-alumni-placeholder', 'swiper-alumni.html');
   await loadComponent('swiper-prestasi-placeholder', 'swiper-prestasi.html');
   await loadComponent('profil-placeholder', 'profil-section.html');
+  await loadComponent('program-placeholder', 'program-section.html');
+  await loadComponent('psb-placeholder', 'psb-section.html');
+    await loadComponent('galeri-sdtq-placeholder', 'galeri-sdtq.html');
+    await loadComponent('galeri-smptq-placeholder', 'galeri-smptq.html');
+    await loadComponent('galeri-mahad-placeholder', 'galeri-mahad.html');
+    await loadComponent('galeri-tahfidz-placeholder', 'galeri-tahfidz.html');
   await loadComponent('global-footer', 'footer.html');
 
   // After components are loaded, initialize site.js logic

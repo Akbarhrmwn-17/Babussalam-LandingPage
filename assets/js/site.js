@@ -238,4 +238,93 @@ window.initSiteJS = () => {
   }
 
   initSwipers();
+
+
+    // Program Unit Swiper
+    const programEl = document.querySelector('.swiper-container-program');
+    if (programEl && !programEl.swiper) {
+      const programSwiper = new Swiper(programEl, {
+        slidesPerView: 1.15,
+        spaceBetween: 16,
+        grabCursor: true,
+        pagination: { el: '.swiper-pagination-program', clickable: true },
+        breakpoints: {
+          480: { slidesPerView: 2, spaceBetween: 16 },
+          768: { slidesPerView: 3, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 24 }
+        }
+      });
+      const progPrev = document.getElementById('program-prev');
+      const progNext = document.getElementById('program-next');
+      if (progPrev) progPrev.addEventListener('click', () => programSwiper.slidePrev());
+      if (progNext) progNext.addEventListener('click', () => programSwiper.slideNext());
+    }
+
+    // PSB Pricing Swiper
+    const psbEl = document.querySelector('.swiper-container-psb');
+    if (psbEl && !psbEl.swiper) {
+      const psbSwiper = new Swiper(psbEl, {
+        slidesPerView: 1.15,
+        spaceBetween: 16,
+        grabCursor: true,
+        pagination: { el: '.swiper-pagination-psb', clickable: true },
+        breakpoints: {
+          480: { slidesPerView: 2, spaceBetween: 16 },
+          768: { slidesPerView: 3, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 24 }
+        }
+      });
+      const psbPrev = document.getElementById('psb-prev');
+      const psbNext = document.getElementById('psb-next');
+      if (psbPrev) psbPrev.addEventListener('click', () => psbSwiper.slidePrev());
+      if (psbNext) psbNext.addEventListener('click', () => psbSwiper.slideNext());
+    }
+
+
+  // ===== 11. Custom CSS Tabs Logic (Visi Misi) =====
+  const vmContainer = document.querySelector('.vm-container');
+  if (vmContainer) {
+    const btnVisi = document.getElementById('btn-visi');
+    const btnMisi = document.getElementById('btn-misi');
+    const contentVisi = document.getElementById('cv-visi');
+    const contentMisi = document.getElementById('cv-misi');
+
+    if (btnVisi && btnMisi && contentVisi && contentMisi) {
+      btnVisi.addEventListener('click', () => {
+        contentVisi.style.display = 'block';
+        contentMisi.style.display = 'none';
+        btnVisi.className = 'vm-btn-active';
+        btnMisi.className = 'vm-btn-inactive';
+      });
+      
+      btnMisi.addEventListener('click', () => {
+        contentVisi.style.display = 'none';
+        contentMisi.style.display = 'block';
+        btnVisi.className = 'vm-btn-inactive';
+        btnMisi.className = 'vm-btn-active';
+      });
+    }
+  }
+
+};
+
+
+// Global function for Profil tabs
+window.switchProfilTab = function(targetId, btnEl) {
+  const container = btnEl.closest('.bg-white');
+  if (!container) return;
+  
+  const btns = container.querySelectorAll('.profil-tab-btn');
+  const contents = container.querySelectorAll('.profil-tab-content');
+  
+  btns.forEach(b => {
+    b.classList.remove('text-sky-600', 'border-sky-500', 'active');
+    b.classList.add('text-stone-400', 'border-transparent');
+  });
+  
+  contents.forEach(c => c.classList.add('hidden'));
+  
+  btnEl.classList.remove('text-stone-400', 'border-transparent');
+  btnEl.classList.add('text-sky-600', 'border-sky-500', 'active');
+  document.getElementById(targetId).classList.remove('hidden');
 };
