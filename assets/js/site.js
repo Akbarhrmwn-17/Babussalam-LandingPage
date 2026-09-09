@@ -79,7 +79,21 @@ window.initSiteJS = () => {
     mobileProgramBtn.addEventListener('click', () => {
       const isOpen = mobileProgramPanel.classList.toggle('open');
       const chevron = mobileProgramBtn.querySelector('.dropdown-chevron');
-      if (chevron) chevron.classList.toggle('rotate-180', isOpen);
+      if (chevron) {
+        chevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0)';
+      }
+    });
+  }
+
+  const mobileInfoBtn = document.getElementById('mobile-info-btn');
+  const mobileInfoPanel = document.getElementById('mobile-info-panel');
+  if (mobileInfoBtn && mobileInfoPanel) {
+    mobileInfoBtn.addEventListener('click', () => {
+      const isOpen = mobileInfoPanel.classList.toggle('open');
+      const chevron = mobileInfoBtn.querySelector('.dropdown-chevron');
+      if (chevron) {
+        chevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0)';
+      }
     });
   }
 
@@ -306,6 +320,69 @@ window.initSiteJS = () => {
     }
   }
 
+  // ===== Promo Modal & Slider Logic =====
+  const promoBtn = document.getElementById('promo-btn');
+  const promoModal = document.getElementById('promo-modal');
+  const promoClose = document.getElementById('promo-close');
+  const promoBackdrop = document.getElementById('promo-backdrop');
+
+  if (promoBtn && promoModal) {
+    const openPromo = () => {
+      promoModal.classList.remove('hidden');
+      setTimeout(() => promoModal.firstElementChild.nextElementSibling.classList.add('scale-100'), 10);
+    };
+    const closePromo = () => {
+      promoModal.classList.add('hidden');
+    };
+
+    promoBtn.addEventListener('click', openPromo);
+    promoClose?.addEventListener('click', closePromo);
+    promoBackdrop?.addEventListener('click', closePromo);
+
+    // Slider Logic
+    const slides = document.querySelectorAll('.promo-slide');
+    const dots = document.querySelectorAll('.promo-dot');
+    const prevBtn = document.getElementById('btn-prev-promo');
+    const nextBtn = document.getElementById('btn-next-promo');
+    
+    if (slides.length > 0) {
+      let currentSlide = 0;
+      
+      const updateSlide = () => {
+        slides.forEach((slide, index) => {
+          if (index === currentSlide) {
+            slide.classList.remove('opacity-0', 'pointer-events-none');
+            slide.classList.add('opacity-100');
+          } else {
+            slide.classList.remove('opacity-100');
+            slide.classList.add('opacity-0', 'pointer-events-none');
+          }
+        });
+        
+        dots.forEach((dot, index) => {
+          if (index === currentSlide) {
+            dot.classList.remove('bg-sky-600/50', 'bg-white/50');
+            dot.classList.add('bg-sky-600', 'scale-125');
+          } else {
+            dot.classList.remove('bg-sky-600', 'scale-125');
+            dot.classList.add('bg-sky-600/50');
+          }
+        });
+      };
+
+      prevBtn?.addEventListener('click', () => {
+        currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+        updateSlide();
+      });
+
+      nextBtn?.addEventListener('click', () => {
+        currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+        updateSlide();
+      });
+      
+      
+    }
+  }
 };
 
 

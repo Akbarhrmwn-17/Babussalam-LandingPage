@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await loadComponent('galeri-smptq-placeholder', 'galeri-smptq.html');
     await loadComponent('galeri-mahad-placeholder', 'galeri-mahad.html');
     await loadComponent('galeri-tahfidz-placeholder', 'galeri-tahfidz.html');
+    await loadComponent('promo-placeholder', 'promo-modal.html');
   await loadComponent('global-footer', 'footer.html');
 
   // After components are loaded, initialize site.js logic

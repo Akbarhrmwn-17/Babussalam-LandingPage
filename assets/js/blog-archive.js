@@ -103,10 +103,10 @@
     tab.addEventListener('click', () => {
       catTabs.forEach(t => {
         t.classList.remove('bg-sky-500', 'text-white');
-        t.classList.add('bg-white', 'text-sky-700', 'border', 'border-sky-200');
+        t.classList.add('bg-white', 'text-sky-700', 'border', 'border-sky-200', 'hover:bg-sky-50');
       });
       tab.classList.add('bg-sky-500', 'text-white');
-      tab.classList.remove('bg-white', 'text-sky-700', 'border', 'border-sky-200');
+      tab.classList.remove('bg-white', 'text-sky-700', 'border', 'border-sky-200', 'hover:bg-sky-50');
       currentCat = parseInt(tab.dataset.cat);
       fetchPosts(true);
     });
