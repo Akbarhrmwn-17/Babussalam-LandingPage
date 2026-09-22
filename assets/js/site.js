@@ -77,7 +77,7 @@ window.initSiteJS = () => {
   const mobileProgramPanel = document.getElementById('mobile-program-panel');
   if (mobileProgramBtn && mobileProgramPanel) {
     mobileProgramBtn.addEventListener('click', () => {
-      const isOpen = mobileProgramPanel.classList.toggle('open');
+      const isOpen = !mobileProgramPanel.classList.toggle('hidden');
       const chevron = mobileProgramBtn.querySelector('.dropdown-chevron');
       if (chevron) {
         chevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0)';
@@ -89,7 +89,7 @@ window.initSiteJS = () => {
   const mobileInfoPanel = document.getElementById('mobile-info-panel');
   if (mobileInfoBtn && mobileInfoPanel) {
     mobileInfoBtn.addEventListener('click', () => {
-      const isOpen = mobileInfoPanel.classList.toggle('open');
+      const isOpen = !mobileInfoPanel.classList.toggle('hidden');
       const chevron = mobileInfoBtn.querySelector('.dropdown-chevron');
       if (chevron) {
         chevron.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0)';
